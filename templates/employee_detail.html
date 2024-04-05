@@ -14,12 +14,14 @@
         <div class="card mx-auto" style="width: 18rem;">
             <img src="{{ employee.photo.url }}" class="card-img-top" alt="employee">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Funcionário: {{employee.id}}</h5>
               <p class="card-text m-0">{{employee.first_name}} {{employee.last_name}}</p>
               <p class="card-text m-0">{{employee.email_address}}</p>
+              <p class="card-text m-0">{{employee.phone_number}}</p>
               <p class="card-text m-0">{{employee.designation}}</p>
-              <a href="#" class="btn btn-primary">Botão</a>
-              <a href="{% url 'home' %}" class="btn btn-primary">Voltar</a>
+              <div style="text-align: center;">
+                <a href="{% url 'home' %}" class="btn btn-primary" style="width: 50%;">Voltar</a>
+              </div>
             </div>
           </div>
     </div>

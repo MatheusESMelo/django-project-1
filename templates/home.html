@@ -17,17 +17,19 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
-                <th scope="col">Sobrenome</th>
+                <th scope="col">Email</th>
                 <th scope="col">Função</th>
+                <th scope="col">Detalhes</th>
             </tr>
             </thead>
             <tbody>
             {% for emp in employees %}
                 <tr>
                     <th>{{ forloop.counter }}</th>
-                    <td><a href="{% url 'employee_detail' emp.id %}">{{ emp.first_name }}</td>
-                    <td>{{ emp.last_name }}</td>
+                    <td>{{ emp.first_name }}</td>
+                    <td>{{ emp.email_address }}</td>
                     <td>{{ emp.designation }}</td>
+                    <td><a href="{% url 'employee_detail' emp.id %}" class="btn btn-primary">Ver mais</a></td>
                 </tr>
             {% endfor %}
             </tbody>
