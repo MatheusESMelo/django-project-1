@@ -29,7 +29,7 @@
                     <td>{{ emp.first_name }}</td>
                     <td>{{ emp.email_address }}</td>
                     <td>{{ emp.designation }}</td>
-                    <td><a href="{% url 'employee_detail' emp.id %}" class="btn btn-primary">Ver mais</a></td>
+                    <td><a href="{% url 'employee_detail' emp.id %}" class="btn">Ver mais</a></td>
                 </tr>
             {% endfor %}
             </tbody>
