@@ -1,6 +1,6 @@
-###### Primeira parte do Readme será em Português e a segunda em Inglês.
+###### Nota: Este README está disponível em Português e Inglês.
 
-###### First part of the Readme will be in Portuguese and the second in English.
+###### Note: This README is available in Portuguese and English.
 
 # Criação de app utilizando Django e Python
 
